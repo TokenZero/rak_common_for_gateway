@@ -217,11 +217,11 @@ do_get_gw_install_chirpstack()
 
 do_get_gw_id()
 {
-    GATEWAY_EUI_NIC="eth0"
+    GATEWAY_EUI_NIC="wlan0"
+    # if [[ `grep "$GATEWAY_EUI_NIC" /proc/net/dev` == "" ]]; then
+    #     GATEWAY_EUI_NIC="eth0"
+    # fi
     if [[ `grep "$GATEWAY_EUI_NIC" /proc/net/dev` == "" ]]; then
-        GATEWAY_EUI_NIC="wlan0"
-    fi
-        if [[ `grep "$GATEWAY_EUI_NIC" /proc/net/dev` == "" ]]; then
         GATEWAY_EUI_NIC="usb0"
     fi
 

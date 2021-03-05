@@ -1,6 +1,8 @@
-# rak_common_for_gateway
+# rak_common_for_gateway - No Ethernet
 
-##	Introduction 
+##	Introduction
+
+Modified fork to remove any eth0 interface ability/dependency 
 
 The aim of this project is to help users to use the RAK Raspberry Pi Developer Gateway more easily. The User Guide can be get from our Web(https://docs.rakwireless.com/Introduction/).
 
@@ -21,6 +23,10 @@ This project currently provides support for the below platforms.
 * RAK2285
 
 ##	Changelog
+
+2021-03-05 v4.2.6.1
+* 1. stripped out any mention/reliance/autoconfig of eth0 interface
+
 2020-11-25 V4.2.6
 
 * 1.Added support for RAK7248C.
@@ -86,6 +92,7 @@ This project currently provides support for the below platforms.
 
 * 1.Multiple models are integrated with one common version.
 * 2.Upgrade LoRa server to 3.0.
+
 
 ##	Installation procedure
 
